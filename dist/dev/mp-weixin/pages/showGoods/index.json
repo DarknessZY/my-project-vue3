@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "展示",
+  "navigationStyle": "custom",
+  "enablePullDownRefresh": true,
+  "usingComponents": {}
+}

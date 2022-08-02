@@ -1,0 +1,1 @@
+<cu-custom wx:if="{{a}}" u-s="{{['d']}}" u-i="d916abae-0" bind:__l="__l" u-p="{{a}}"><view slot="content">首页</view></cu-custom><card-swiper wx:if="{{b}}" u-i="d916abae-1" bind:__l="__l" u-p="{{b}}"></card-swiper><tabbar u-i="d916abae-2" bind:__l="__l"></tabbar>

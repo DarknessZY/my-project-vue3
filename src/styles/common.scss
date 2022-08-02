@@ -1,0 +1,122 @@
+@import "./vars.scss";
+@import "./mixins.scss";
+
+page {
+  box-sizing: border-box;
+  font-size: $font-size;
+}
+
+view,
+text {
+  font-size: $font-size;
+  box-sizing: border-box;
+  color: #333;
+}
+// 去除按钮默认边框
+button::after {
+  border: none;
+}
+
+.flex-row {
+  @include flex-row();
+}
+
+.flex-row-between {
+  @include flex-row();
+  justify-content: space-between;
+}
+
+.flex-row-around {
+  @include flex-row();
+  justify-content: space-around;
+}
+
+.flex-row-center {
+  @include flex-row();
+  justify-content: center;
+}
+
+.flex-row-end {
+  @include flex-row();
+  justify-content: flex-end;
+}
+
+.flex-column {
+  @include flex-column();
+}
+
+.flex-column-center {
+  @include flex-column();
+  align-items: center;
+  justify-content: center;
+}
+
+.flex1 {
+  flex: 1;
+  height: 100%;
+}
+
+.text-line1 {
+  @include text-eli();
+  -webkit-line-clamp: 1;
+}
+
+.text-line2 {
+  @include text-eli();
+  -webkit-line-clamp: 2;
+}
+
+/* 间隔相关 */
+.pad20 {
+  padding: 20rpx;
+}
+.mb32 {
+  margin-bottom: 32rpx;
+}
+.mb40 {
+  margin-bottom: 40rpx;
+}
+.mt60 {
+  margin-top: 60rpx;
+}
+.ml20 {
+  margin-left: 20rpx;
+}
+.ml40 {
+  margin-left: 40rpx;
+}
+
+/* 字体大小相关 */
+
+.font24 {
+  font-size: 24rpx;
+}
+
+.font48 {
+  font-size: 48rpx;
+}
+.font36 {
+  font-size: 36rpx;
+}
+.font32 {
+  font-size: 32rpx;
+}
+.font-bold {
+  font-weight: bold;
+}
+.text-center {
+  text-align: center;
+}
+
+.text-white {
+  color: #fff;
+}
+.text-color-6 {
+  color: #666;
+}
+.text-color-9 {
+  color: #999;
+}
+.bg-white {
+  background-color: #fff;
+}

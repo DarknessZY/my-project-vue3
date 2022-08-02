@@ -1,0 +1,17 @@
+@mixin flex-row {
+    display: flex;
+    align-items: center;
+  }
+  
+  @mixin flex-column {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  // 文字超出隐藏
+  @mixin text-eli {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+  }
