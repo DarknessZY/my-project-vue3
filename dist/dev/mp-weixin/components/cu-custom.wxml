@@ -1,0 +1,1 @@
+<view><view class="cu-custom" style="{{g}}"><view style="{{d}}" class="{{['cu-bar', 'fixed', e, f]}}"><view wx:if="{{a}}" class="action" bindtap="{{b}}"><text class="cuIcon-back"></text><slot name="backText"></slot></view><view class="content" style="{{c}}"><slot name="content"></slot></view><slot name="right"></slot></view></view></view>

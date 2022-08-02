@@ -1,0 +1,1 @@
+<view class="TabBar"><view wx:for="{{a}}" wx:for-item="item" wx:key="g" class="tab" bindtap="{{item.h}}"><image wx:if="{{item.a}}" class="imgsize" src="{{item.b}}" mode="widthFix"></image><image wx:if="{{item.c}}" class="addimgsize" src="{{item.d}}" mode="widthFix"></image><view class="{{item.f}}">{{item.e}}</view></view></view>
