@@ -5,6 +5,30 @@
     </cu-custom>
     <!-- 轮播图 -->
     <card-swiper :swiperList="swiperList"></card-swiper>
+    <!-- 产品品展示 -->
+    <view class="text-show">
+        <h1 class="text-active">产品展示</h1>
+        <text class="text-no">PRODUCT DISPLAY</text>
+    </view>
+    <!-- 小卡片 -->
+    <view class="cardlayout">
+    <view class="bg-img bg-mask flex align-center"
+        style="background-image: url('@/static/lizi.png');background-size:200rpx;border-radius:10%">
+        <view class="padding-xl text-white">
+            <view class="padding-xs text-xxl text-bold">
+                鞋垫
+            </view>
+        </view>
+    </view>
+    <view class="bg-img bg-mask flex align-center"
+        style="background-image: url('@/static/lizi.png');background-size:200rpx;border-radius:10%">
+        <view class="padding-xl text-white">
+            <view class="padding-xs text-xxl text-bold">
+                矫形器
+            </view>
+        </view>
+    </view>
+    </view>
     <!-- 底部导航 -->
     <tabbar></tabbar>
 </template>
@@ -33,4 +57,37 @@ const swiperList = reactive([
 </script>
 
 <style lang="scss">
+
+pages {
+    width: 100%;
+    height: 100%;
+    background-color: #e9e7e7;
+}
+
+.text-show {
+    width: 100%;
+    margin-top: 40rpx;
+    margin-bottom: 40rpx;
+}
+.text-active {
+    color: #353535;
+    font-weight: bold;
+    margin-bottom: 8rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.text-no {
+    color: #999999;
+    font-size: 30rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cardlayout{
+    display: flex;
+    justify-content: space-around;
+}
 </style>
