@@ -9,5 +9,6 @@
   },
   "usingComponents": {
     "cu-custom": "/components/cu-custom"
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }
