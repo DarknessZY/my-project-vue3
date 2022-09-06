@@ -4,12 +4,14 @@
         <block slot="content">首页</block>
     </cu-custom>
     <h1>我是首页</h1>
-    <trading-data :trading-background="tradingBackground"> </trading-data>
+    <trading-data :trading-background="tradingBackground" :incomeNumber="incomeNumber" :volume="volume"> </trading-data>
 </template>
 
 <script setup lang="ts">
 import tradingData from '@/components/tradingData.vue'
-const tradingBackground = ref('linear-gradient(159deg, #7486FC 0%, #5368EF 100%)')
+const tradingBackground = ref('/static/tradingDataBg.png')
+const incomeNumber = ref(19807.00)
+const volume = ref(35)
 const myBg = ref('/static/mybg.png')
 </script>
 

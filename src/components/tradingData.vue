@@ -1,5 +1,5 @@
 <template>
-     <view class="tradingData" :style="{background:tradingBackground}">
+     <view class="tradingData" :style="{backgroundImage: 'url(' + tradingBackground + ')'}">
            <view class="income">
                 <view >
                     <view class="text">&nbsp;今日收入</view>
@@ -10,7 +10,7 @@
            </view>
            <view class="jyval">
                 <view class="line">
-
+                    <!-- 竖线 -->
                 </view>
                 <view class="jy">
                     <view>
@@ -30,12 +30,18 @@ const props = defineProps({
         type: String,
         default: ''
     },
+    incomeNumber: {
+        type:Number,
+        default:''
+    },
+    volume: {
+        type:Number,
+        default:''
+    }
 })
-const incomeNumber = ref('19807.00')
 const todayIncome = computed(() =>{
-    return Number(incomeNumber.value).toFixed(2).toLocaleString()
+    return Number(Number(props.incomeNumber).toFixed(2)).toLocaleString( "en", { minimumFractionDigits: 2 })
 })
-const volume = ref(35)
 </script>
 
 <style scoped lang="scss">
@@ -49,7 +55,6 @@ const volume = ref(35)
     display: flex;
     align-items: center;
     justify-content: center;
-
     .income {
         flex: 1;
         margin-left: 29rpx;
@@ -61,7 +66,7 @@ const volume = ref(35)
         .line {
             width: 1rpx;
             height: 79rpx;
-            border-right: solid white 1rpx;
+            border-right: solid #FFFFFF 1rpx;
             margin-left: 27rpx;
             opacity: 30%;
         }
@@ -86,5 +91,6 @@ const volume = ref(35)
     color: #FFFFFF;
     line-height: 58rpx;
     margin-top: 12rpx;
+    text-align: left;
 }
 </style>
