@@ -41,9 +41,8 @@ import {swiperType} from '@/utils/Types/imgTypes'
             ]
         }
     })
-    let swiperList:Array<swiperType>= reactive(fatherData.swiperList)
+    let swiperList:any = reactive(fatherData.swiperList)
     const cardSwiper =(e:any)=>{
-        // console.log('轮播图下标',e.detail.current);
         cardCur.value =e.detail.current
     }
     const TowerSwiper = ()=>{
