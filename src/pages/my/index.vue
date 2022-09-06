@@ -5,14 +5,30 @@
     </cu-custom>
     <h1>我是首页</h1>
     <trading-data :trading-background="tradingBackground" :incomeNumber="incomeNumber" :volume="volume"> </trading-data>
+    <order-list :orderList ='List'></order-list>
 </template>
 
 <script setup lang="ts">
 import tradingData from '@/components/tradingData.vue'
+import orderList from '@/components/orderList.vue'
 const tradingBackground = ref('/static/tradingDataBg.png')
 const incomeNumber = ref(19807.00)
 const volume = ref(35)
 const myBg = ref('/static/mybg.png')
+const List = ref([
+    {
+        orderNum:'12939021311SS',
+        orderState:'已放款',
+        turnover:'88.82',
+        createTime:'2021-06-21 07:35:57'
+    },
+    {
+        orderNum:'123154651',
+        orderState:'已放款',
+        turnover:'88.82',
+        createTime:'2021-06-21 15:12:57'
+    }
+])
 </script>
 
 <style scoped lang="scss">
