@@ -1,5 +1,5 @@
 <template>
-     <view class="tradingData" :style="{backgroundImage: 'url(' + tradingBackground + ')'}">
+     <view class="tradingData" :style="{backgroundImage: 'url(' + tradingBackground + ')',backgroundRepeat: 'no-repeat',backgroundSize:'cover'}">
            <view class="income">
                 <view >
                     <view class="text">&nbsp;今日收入</view>
@@ -47,11 +47,11 @@ const todayIncome = computed(() =>{
 <style scoped lang="scss">
 
 .tradingData {
+    height: 201rpx;
+    width: 691rpx;
     z-index: 999;
     margin: 30rpx 31rpx 0 29rpx;
     border-radius: 14rpx;
-    height: 200rpx;
-    width: 690rpx;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -67,7 +67,7 @@ const todayIncome = computed(() =>{
             width: 1rpx;
             height: 79rpx;
             border-right: solid #FFFFFF 1rpx;
-            margin-left: 27rpx;
+            margin-left: 10rpx;
             opacity: 30%;
         }
         .jy {

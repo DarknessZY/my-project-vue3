@@ -10,7 +10,7 @@
                         <text class="orderNum">订单号：{{item.orderNum}}</text>
                     </view>
                     <view class="orderStatus">
-                        <text class="status" >{{item.orderState}}</text>
+                        <text class="status">{{item.orderState}}</text>
                     </view>
                 </view>
                 <view class="orderDate">
@@ -18,12 +18,8 @@
                 </view>
             </view>
             <view class="orderRight">
-                <view>
-                    <view>
-                        <text>到账:</text>
-                        <text>￥{{item.turnover}}</text>
-                    </view>
-                </view>
+                        <view class="turnovertxt">到账:</view>
+                        <view class="turnover">￥{{item.turnover}}</view>
             </view>
         </view>
     </view>
@@ -115,6 +111,20 @@ import {ref,watch} from 'vue'
         }
         .orderRight {
             margin-right: 30rpx;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            .turnovertxt {
+
+            }
+
+            .turnover {
+                font-size: 35rpx;
+                font-family: DIN-Medium, DIN;
+                font-weight: 500;
+                color: #212034;
+            }
         }
     }
 }
